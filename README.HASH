@@ -1,0 +1,26 @@
+DANNY YOU
+
+I. Completed: All
+
+II. Bugs were encountered when trying to read the dictionary file line by line. For some reason when using just getline() to get the dictionary words, it will not propertly insert them into the hash table. This was fixed by using a stringstream after it.
+
+III. To Run code you can use the included Make file by running the command:
+Make Clean
+Make All
+or
+For create_and_test_hash.cc: 
+./create_and_test_hash <words file name> <query words file name> <flag>
+
+For spell_check.cc:
+./spell_check <document file> <dictionary file>
+
+
+IV. Input Files to test:
+For spell_check.cc:
+document1_short.txt
+document1.txt
+wordsEnglish.txt
+
+For create_and_test_hash.cc:
+query_words.txt
+words.txt
